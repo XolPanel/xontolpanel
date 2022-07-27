@@ -7,7 +7,3 @@ run:
     command:
       - gunicorn wsgi:app
     image: web
-  worker: 
-    command:
-      - celery worker --app=main.celery
-    image: worker
