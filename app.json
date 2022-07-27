@@ -1,0 +1,53 @@
+{
+  "name": "XolPanel - Web VPN Panel",
+  "description": "XolPanel - Free Web VPN Panel With WSGI Flask WebServer",
+  "stack": "container",
+  "env": {
+    "ADMIN_USERNAME": {
+      "description": "Admin Username (untuk mengelola atau menghapus member di Panel)",
+      "required": true
+    },
+    "ADMIN_PASSWORD": {
+      "description": "Admin Password",
+      "required": true
+    },
+     "AUTH_KEY": {
+      "description": "AUTH Key untuk API VPS",
+      "required": true
+    },
+    "DARK_MODE": {
+      "description": "isi 'yes' kalau mau ganti tema ke Dark Mode, ketik 'no' kalau mau ganti ke tema Light / White ",
+      "required": true
+    },
+    "SERVER": {
+      "description": "format: 'NAMA,HOST,HARGA;NAMA2,HOST2,HARGA2' contoh: 'SG,sg.xolva.id,10000;HK,hk.xolva.id,5000' Gunakan ; untuk memisahkan server/vps",
+      "required": true
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Nama App heroku, Nama App yang paling pertama di isi (liat paling atas)",
+      "required": true
+    }
+  },
+  "addons": [
+    {
+    "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
