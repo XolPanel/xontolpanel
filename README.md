@@ -1,2 +1,3 @@
-# xontolpanel
-Free VPN Web Panel
+# Getting started
+### Step 1
+• Fork
