@@ -1,3 +1,13 @@
 build:
   docker:
-      web: Dockerfile
+    web: Dockerfile
+    worker: Dockerfile
+run:
+  web: 
+    command:
+      - gunicorn wsgi:app
+    image: web
+  worker: 
+    command:
+      - celery worker --app=main.celery
+    image: worker
