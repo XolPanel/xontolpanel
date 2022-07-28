@@ -42,7 +42,7 @@ if DARK_MODE.lower() == "yes":
 		     "sshbuat":"sshbuat.html",
 		     "sshtrial":"sshtrial.html"}
 else:
-	templates = {"index":"light_index1.html",
+	templates = {"index":"flight_index1.html",
 		     "delete":"light_delete.html",
 		     "register":"light_register.html",
 		     "topup":"light_topup.html",
