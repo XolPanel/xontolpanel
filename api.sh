@@ -3,7 +3,7 @@ read AUTH
 apt update && apt upgrade -y
 apt install python3-pip python3
 pip3 install flask
-tee -a api.service<<END
+tee -a /etc/systemd/system/api.service<<END
 [Unit]
 Description=My Project
 After=network.target
