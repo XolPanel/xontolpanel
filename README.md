@@ -11,7 +11,7 @@ apt update && apt upgrade -y && curl -O https://raw.githubusercontent.com/XolPan
 ### Step 2 (Deploy To Heroku)
 - Buat Akun Heroku
 - Klik Tombol Dibawah
-<p align="center"><a href="https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FXolPanel%2Fxontolpanel&template=https%3A%2F%2Fgithub.com%2FXolPanel%2Fxontolpanel"><img src="https://www.herokucdn.com/deploy/button.png" alt="Deploy to Heroku" target="_blank"/></a></p></img>
+<p align="center"><a href="https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FXolPanel%2Fxontolpanel&template=https%3A%2F%2Fgithub.com%2FXolPanel%2Fxontolpanel"><img src="https://www.herokucdn.com/deploy/button.png" alt="Deploy to Heroku" target="_blank"/></a></img></p>
 - NOTE: di kolom `SERVER`, wajib isi 2 SERVER. Contoh: `VPS-ASLI,vps-asli.com,7000;VPS-PALSU,vps-palsu.com,69696`
 - klik deploy
 - klik Manage App
