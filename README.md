@@ -18,3 +18,5 @@ apt update && apt upgrade -y && curl -O https://raw.githubusercontent.com/XolPan
 - klik Manage App
 - Klik `Open App`
 - mengbingung / error?, tanya di <a href="https://t.me/XolPanelDC">Di Sini</a>
+
+Demo: https://XolPanel.herokuapp.com/
